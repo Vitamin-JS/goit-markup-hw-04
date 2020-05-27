@@ -1,0 +1,579 @@
+/* Основной цвет текста Серый  #757575  */
+/* Второстепенный цвет текста Черный #212121   */
+/* Белый цвет фона Section  #FFFFFF   */
+/* Серый цвет фона  #F5F4FA  */
+/* Бєкграунд Футера #2F303A   */
+/* Акцент - Голубой цвет #2196F3  */
+/* Font Raleway */
+/* Font Roboto */
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-bg-color: #ffffff;
+  --gray-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --accent-color-blue: #2196f3;
+  --wtah-we-do-bg: rgba(47, 48, 58, 0.8);
+  --made-by-studentsGoIT: rgba(255, 255, 255, 0.4);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+}
+
+/* Общие стили контейнера */
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px double rgb(196, 139, 129); */
+}
+
+/* Черный шрифт для лого и других тайтлов */
+.logo {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+/* Синий цвет лого */
+.logo-blue {
+  color: var(--accent-color-blue);
+}
+
+.image-block {
+  display: block;
+  max-width: 100%;
+}
+/* ================================Свойства блока Хедер=============================== */
+/* Отступы лого */
+.logo-font {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+/* Обнуление отступа <p>-лого  */
+.logo-position {
+  margin: 0;
+}
+
+/* Шрифт лого в навгации и футере */
+.logo-font,
+.logo-font-footer {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03pc;
+}
+
+/* Навигвция правый отступ контакты */
+.nav-contacts > li:first-child {
+  margin-right: 30px;
+}
+
+/* Отступы Навигация контакты */
+.nav-contacts {
+  margin-left: auto;
+  padding: 0;
+}
+
+/* Шрифт в навигации */
+.nav-font {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Размеры блока хедер */
+.header-menu,
+.nav-contacts {
+  display: flex;
+}
+
+/* Отступы меню навигации */
+.header-menu {
+  margin-left: 85px;
+  padding: 0;
+}
+
+.nav-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Правый отступ меню навигации */
+.nav-list:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Цвет контактов в навигации и футере */
+.contacts {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+/* Навигация флекс-бокс контакты */
+.navBox-contacts {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  border-bottom: 2px solid #ececec;
+}
+
+/* ==========================Стили для  секции Герой=========================== */
+.hero-title {
+  margin: 0 0 46px;
+  padding-top: 200px;
+  color: var(--white-bg-color);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Свойства секции Герой  -   Удалил*/
+
+/* Стиль кнопки героя */
+.hero .button {
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 0;
+}
+
+/* Герой флекс свойства контейнера */
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================================Свойства блока Преимущества====================== */
+/* Отступы блока Преимущества */
+.advatn {
+  padding: 0;
+  display: flex;
+}
+/* Падинги всей секции */
+.advant-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Нижний отступ от иконки */
+.icon-svg {
+  margin-bottom: 30px;
+}
+
+.advant-list {
+  width: calc((1170px - 90px) / 4);
+}
+
+.advant-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Стили текста заголовка секции Преимущества */
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: auto;
+}
+/* Стили блока Преимущества */
+.text-advetages {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+/*=============================== Стиль секции Чем мы занимаемся================= */
+
+/* Стили заголовка ЧМЗ */
+.whatWeDo .logo {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Стили текста видов работ ЧМЗ */
+.whatWeDo-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+/* Бэкграунд для белого текста - потом удалить */
+.whatWeDo-bg {
+  background-color: var(--wtah-we-do-bg);
+}
+
+/* Отступы UL блока Чем мы занимаемся */
+.whatWeDo-ul {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+/* Размеры списка работ */
+.whatWeDo-list {
+  width: calc((1170px - 60px) / 3);
+}
+
+.whatWeDo-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Верхний падинг для всей секции */
+.whatWeDo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* =============================Стили секции Наша команда=========================== */
+
+/* Стили Наша команда заголовок */
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  margin-top: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team .logo {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.proffesion {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Обнуление отступов списка UL */
+.our-team {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+}
+
+/* Отступы от фото команды */
+.team-list .image-block {
+  margin-bottom: 30px;
+}
+
+/* Отступы списка членов команды */
+.team-list {
+  display: inline-block;
+  width: 274px;
+  background-color: var(--white-bg-color);
+}
+
+/* Отступы имен членов команды */
+.team-list .logo {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* Отступы профессий членов команды */
+.proffesion {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+/* Стили соц сетей команды */
+.our-team-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+/* Правый марджин нашей команды */
+.team-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--gray-bg-color);
+}
+
+/* ============================Стили секции Постоянные клиенты====================== */
+/* Флекс бокс заголовка  */
+.clientsTitle-box {
+  display: flex;
+  width: 1170px;
+  justify-content: center;
+}
+/* Флекс бокс списка компаний */
+.clients-box {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+/* Отступы заголовка Постоянные клиенты */
+.clients .logo {
+  font-size: 36px;
+  line-height: 1.17;
+  margin: 0 0 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Стили списка пост. клиенты */
+.compani-list {
+  padding-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Правый отступ списка компаний */
+.clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Отсупы всей секции */
+.clients {
+  padding-top: 120px;
+  padding-bottom: 94px;
+}
+
+/* ==================================Стили Футера ============================== */
+footer {
+  height: 253px;
+}
+.logo-font-footer {
+  display: inline-block;
+  font-size: 22px;
+}
+
+/* ===============Заголовки белым цветом */
+.white-text {
+  color: var(--white-bg-color);
+}
+
+.footer-bg {
+  background-color: var(--footer-bg-color);
+}
+/* Стили адреса футера */
+.address-footer {
+  color: var(--white-bg-color);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.contacts-footer {
+  color: var(--footer-contacts-color);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Отступы спика контактов футера UL */
+.footer-address-ul {
+  padding: 0;
+  min-width: 231px;
+}
+
+.footer-address-list:not(:first-child) {
+  margin-top: 9px;
+}
+
+/* Флекс бокс всего футера */
+.footer-flexBox {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Флекс бокс блока ссылок и заголовка=======Блок ссылок===== */
+.footerLinks-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+  width: 207px;
+  padding-top: 56px;
+}
+/* Флекс бокс тайтл */
+.footerTitle-box {
+  display: flex;
+}
+
+/* Список UL ссылок */
+.links-list {
+  display: flex;
+  padding: 0;
+}
+
+/* Стили заголовков футера */
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 21px;
+  display: block;
+}
+/* Лого футера -  отступы*/
+.logo-font-footer > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Ссылки на соц.сети в футере  */
+.footerSocialLinks {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  display: inline-block;
+}
+/* Отступы  справа соц.ссылок футера */
+.footer-social-list:not(:last-child) {
+  margin-right: 11px;
+}
+
+/* Отступы поля форма футер ========= Блок Форма=============== */
+/* Отступы блока Форма */
+.footerMail-box {
+  display: flex;
+  margin-left: 93px;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+}
+/* Стили поля e-mail */
+.input-email {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Стили кнопки в футере */
+.footer .button {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-left: 12px;
+  padding-top: 10px; /*       new   */
+  padding-bottom: 10px; /*    new   */
+  padding-left: 29px; /*      new   */
+  text-decoration: none; /*   new   */
+  display: inline-flex; /*    new   */
+  cursor: pointer; /*         new   */
+  align-items: center; /*     new   */
+}
+
+.footer .button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/telegram.svg);
+  background-size: contain;
+}
+
+.madeByStudents {
+  color: var(--made-by-studentsGoIT);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 21px;
+}
+
+/* Интерактивные действия */
+.hover-text:hover,
+.hover-text:focus {
+  color: var(--accent-color-blue);
+}
+
+.focus-text:focus,
+.focus-text .white-text:focus {
+  color: var(--accent-color-blue);
+}
+
+.button {
+  color: var(--white-bg-color);
+  background-color: var(--accent-color-blue);
+  border: none;
+}
