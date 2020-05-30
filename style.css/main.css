@@ -34,6 +34,18 @@ ul {
   margin: 0;
 }
 
+/* === Утилита hidden ==== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   max-width: 1600px;
@@ -586,16 +598,4 @@ footer {
   color: var(--white-bg-color);
   background-color: var(--accent-color-blue);
   border: none;
-}
-
-/* ================== Утилита============================ */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0px;
-  padding: 0px;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
