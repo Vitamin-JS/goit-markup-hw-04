@@ -614,7 +614,11 @@ footer {
 
 /* Стили svg иконок */
 .footer-icons {
-  fill: #2196f3;
+  fill: var(--white-bg-color);
+}
+
+.footerSocialLinks:hover {
+  background-color: var(--accent-color-blue);
 }
 
 /* Отступы  справа соц.ссылок футера */
