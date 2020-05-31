@@ -487,7 +487,17 @@ header {
 
 /* Стили SVG иконок */
 .icon-client {
-  fill: palevioletred; /* Стили SVG #afb1b8 иконок */
+  fill: #afb1b8; /* Стили SVG #afb1b8 иконок */
+}
+
+/* Hover для иконок */
+.icon-client:hover {
+  fill: var(--accent-color-blue);
+}
+
+/* Hover для border li */
+.clients-list:hover {
+  border: 1px solid var(--accent-color-blue);
 }
 
 /* Правый отступ списка компаний */
