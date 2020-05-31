@@ -611,6 +611,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+/* Стили svg иконок */
+.footer-icons {
+  fill: #2196f3;
+}
+
 /* Отступы  справа соц.ссылок футера */
 .footer-social-list:not(:last-child) {
   margin-right: 10px;
