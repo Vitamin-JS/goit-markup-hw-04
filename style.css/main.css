@@ -227,9 +227,16 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* Нижний отступ от иконки */
-.icon-svg {
+
+/* Свойства SVG иконок */
+.advant-svg {
   margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: var(--gray-bg-color);
+  border-radius: 4px;
 }
 
 .advant-list {
