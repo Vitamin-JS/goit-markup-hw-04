@@ -381,8 +381,27 @@ header {
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 0;
+  padding-bottom: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: center;
 }
+
+.our-team-links > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Стили SVG иконок соцсетей */
+.team-links {
+  fill: currentColor;
+}
+
+/* SVG иконка facebook */
+/* .facebook {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+} */
 
 /* Правый марджин нашей команды */
 .team-list:not(:last-child) {
@@ -408,10 +427,10 @@ header {
   justify-content: center;
 }
 
-.social-links {
+/* .social-links {
   text-decoration: none;
   color: var(--primary-text-color);
-}
+} */
 
 /* Отступы заголовка Постоянные клиенты */
 .clients .logo {
@@ -622,4 +641,5 @@ footer {
   color: var(--white-bg-color);
   background-color: var(--accent-color-blue);
   border: none;
+  cursor: pointer;
 }
