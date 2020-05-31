@@ -407,7 +407,7 @@ header {
 /* Стили ссылок на соцсети */
 .social-links {
   text-decoration: none;
-  color: var(--secondary-text-color); /* --- цвет иконок в ссылках---*/
+  color: var(--primary-text-color); /* --- цвет иконок в ссылках---*/
 }
 
 /* Стили SVG иконок соцсетей */
