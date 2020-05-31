@@ -161,8 +161,7 @@ header {
 .decoration {
   width: 16px;
   height: 16px;
-  padding: 0;
-  margin: 0;
+  fill: currentColor;
 }
 
 /* Контакты левый отступ от иконки */
@@ -170,6 +169,7 @@ header {
   padding-left: 10px;
 }
 
+/* Флекс контейнер для ссылки <а> */
 .contacts.nav-font {
   display: flex;
 }
