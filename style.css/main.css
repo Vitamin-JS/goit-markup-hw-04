@@ -320,6 +320,13 @@ header {
 
 /* =============================Стили секции Наша команда=========================== */
 
+/* Отступы всей секци Наша команда */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--gray-bg-color);
+}
+
 /* Стили Наша команда заголовок */
 .team-title {
   font-size: 36px;
@@ -387,13 +394,20 @@ header {
   justify-content: center;
 }
 
-.team-links:hover {
-  fill: var(--white-bg-color);
-  background-color: var(--accent-color-blue);
+/* Правый марджин нашей команды */
+.team-list:not(:last-child) {
+  margin-right: 30px;
 }
 
+/* Правый отступ между иконками соцсетей */
 .our-team-links > li:not(:last-child) {
   margin-right: 10px;
+}
+
+/* Стили ссылок на соцсети */
+.social-links {
+  text-decoration: none;
+  color: var(--secondary-text-color); /* --- цвет иконок в ссылках---*/
 }
 
 /* Стили SVG иконок соцсетей */
@@ -401,22 +415,10 @@ header {
   fill: currentColor;
 }
 
-/* SVG иконка facebook */
-/* .facebook {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-} */
-
-/* Правый марджин нашей команды */
-.team-list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--gray-bg-color);
+.team-links:hover {
+  fill: var(--white-bg-color);
+  background-color: var(--accent-color-blue);
+  border-radius: 50%;
 }
 
 /* ============================Стили секции Постоянные клиенты====================== */
@@ -431,11 +433,6 @@ header {
   display: flex;
   justify-content: center;
 }
-
-/* .social-links {
-  text-decoration: none;
-  color: var(--primary-text-color);
-} */
 
 /* Отступы заголовка Постоянные клиенты */
 .clients .logo {
