@@ -485,6 +485,11 @@ header {
   height: 100%;
 }
 
+/* Стили SVG иконок */
+.icon-client {
+  fill: palevioletred; /* Стили SVG #afb1b8 иконок */
+}
+
 /* Правый отступ списка компаний */
 .clients-list:not(:last-child) {
   margin-right: 30px;
