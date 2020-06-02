@@ -153,10 +153,6 @@ body {
   align-items: center; /*    проверить baseline*/
 }
 
-header {
-  border-bottom: 2px solid #ececec;
-}
-
 /* SVG icons */
 .decoration {
   width: 16px;
@@ -175,6 +171,12 @@ header {
 }
 
 /* ==========================Стили для  секции Герой=========================== */
+
+.hero {
+  max-width: 1600px;
+}
+
+/* Стили заголовка Героя */
 .hero-title {
   margin: 0 0 46px;
   /* padding-top: 200px; */
@@ -202,6 +204,7 @@ header {
 
 /* Герой флекс свойства контейнера */
 .hero-box {
+  max-width: 1600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -566,6 +569,7 @@ footer {
   align-items: baseline;
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 18px;
 }
 /* Флекс бокс блока ссылок и заголовка=======Блок ссылок===== */
 .footerLinks-box {
@@ -685,8 +689,8 @@ footer {
   line-height: 2;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 18px;
   margin-bottom: 21px;
+  margin-top: 0;
 }
 
 /* Интерактивные действия */
