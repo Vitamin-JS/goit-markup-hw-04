@@ -433,7 +433,9 @@ body {
   fill: currentColor;
 }
 
-.team-links:hover {
+/* Hover и Focus для иконок соцсетей */
+.team-links:hover,
+.team-links:focus {
   fill: var(--white-bg-color);
   background-color: var(--accent-color-blue);
   border-radius: 50%;
@@ -505,7 +507,7 @@ body {
 
 /* Стили SVG иконок */
 .icon-client {
-  fill: #afb1b8; /* Стили SVG #afb1b8 иконок */
+  fill: #afb1b8;
 }
 
 /* Hover для иконок */
@@ -636,7 +638,8 @@ footer {
   fill: var(--white-bg-color);
 }
 
-.footerSocialLinks:hover {
+.footerSocialLinks:hover,
+.footerSocialLinks:focus {
   background-color: var(--accent-color-blue);
 }
 
@@ -645,7 +648,7 @@ footer {
   margin-right: 10px;
 }
 
-/* Отступы поля форма футер ========= Блок Форма=============== */
+/* Отступы поля форма футер === Блок Форма======== */
 /* Отступы блока Форма */
 .footerMail-box {
   display: flex;
@@ -671,6 +674,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   padding: 18px 12px;
 }
+
 /* Стили кнопки в футере */
 .footer .button {
   width: 200px;
@@ -698,7 +702,7 @@ footer {
   background-image: url(../images/telegram.svg);
   background-size: contain;
 }
-
+/*  Нижняя надпись */
 .madeByStudents {
   color: var(--made-by-studentsGoIT);
   font-size: 12px;
@@ -725,4 +729,9 @@ footer {
   background-color: var(--accent-color-blue);
   border: none;
   cursor: pointer;
+}
+
+.button:focus {
+  box-shadow: 0px 0px 2px 4px #e7e7e7;
+  font-size: 18px;
 }
