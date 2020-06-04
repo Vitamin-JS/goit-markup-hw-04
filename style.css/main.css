@@ -81,6 +81,7 @@ body {
   max-width: 100%;
 }
 /* ================================Свойства блока Хедер=============================== */
+
 /* Отступы лого */
 .logo-font {
   margin-top: 24px;
@@ -119,7 +120,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Размеры блока хедер */
+/* Свойства блока хедер */
 .header-menu,
 .nav-contacts {
   display: flex;
@@ -422,20 +423,17 @@ body {
   margin-right: 10px;
 }
 
-/* Стили ссылок на соцсети */
+/* Стили ссылок на соцсети + SVG */
 .social-links {
+  display: inline-block;
   text-decoration: none;
   color: #afb1b8; /* --- цвет иконок в ссылках---*/
-}
-
-/* Стили SVG иконок соцсетей */
-.team-links {
   fill: currentColor;
 }
 
 /* Hover и Focus для иконок соцсетей */
-.team-links:hover,
-.team-links:focus {
+.social-links:hover,
+.social-links:focus {
   fill: var(--white-bg-color);
   background-color: var(--accent-color-blue);
   border-radius: 50%;
