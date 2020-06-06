@@ -295,8 +295,9 @@ body {
   text-align: center;
 }
 
-/* Стили текста видов работ ЧМЗ */
+/* Стили текста видов работ ЧМЗ  и цвет бэкграунда*/
 .whatWeDo-text {
+  position: absolute;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -306,11 +307,9 @@ body {
   margin-bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-}
-
-/* Бэкграунд для белого текста - потом удалить */
-.whatWeDo-bg {
   background-color: var(--wtah-we-do-bg);
+  width: calc((1170px - 60px) / 3);
+  transform: translateY(-100%);
 }
 
 /* Отступы UL блока Чем мы занимаемся */
@@ -322,6 +321,7 @@ body {
 }
 /* Размеры списка работ */
 .whatWeDo-list {
+  position: relative;
   width: calc((1170px - 60px) / 3);
 }
 
