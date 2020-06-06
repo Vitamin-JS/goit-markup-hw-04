@@ -96,8 +96,10 @@ header {
 }
 /* Отступы примеров работ */
 .work-list {
+  position: relative;
   margin-top: 30px;
   width: calc((1170px - 60px) / 3);
+  cursor: pointer;
 }
 
 .work-list:not(:nth-child(3n)) {
@@ -136,10 +138,36 @@ header {
   border-bottom-right-radius: 5px;
 }
 
-/* Интерактивные действия */
-.filer:hover,
-.filer:focus,
-.examples:focus {
+/* Скрытый блок на карточке */
+.hidden-box {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+}
+
+/* Текст в скрытом блоке на карточке */
+.card-hideText {
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
   color: var(--white-bg-color);
   background-color: var(--accent-color-blue);
+  width: calc((1170px - 60px) / 3);
+  height: 294px;
+  padding: 64px 24px 63px;
+  margin: 0;
+}
+
+/* Интерактивные действия с фильтрами*/
+.filer:hover,
+.filer:focus {
+  color: var(--white-bg-color);
+  background-color: var(--accent-color-blue);
+}
+
+/* Интерактивные действия с карточками  */
+.hidden-box:hover {
+  opacity: 0.9;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
