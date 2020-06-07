@@ -160,6 +160,12 @@ header {
   margin: 0;
 }
 
+/* Прозрачный блок под скрытым текстом  */
+.hidden-opacityBox {
+  width: calc((1170px - 60px) / 3);
+  height: 110px;
+}
+
 /* Интерактивные действия с фильтрами*/
 .filer:hover,
 .filer:focus {
