@@ -184,6 +184,10 @@ body {
   margin-top: 28px;
 }
 
+.current {
+  color: var(--accent-color-blue);
+}
+
 /* ==========================Стили для  секции Герой=========================== */
 
 .hero {
@@ -429,6 +433,10 @@ body {
   text-decoration: none;
   color: #afb1b8; /* --- цвет иконок в ссылках---*/
   fill: currentColor;
+  border-radius: 50%;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hover и Focus для иконок соцсетей */
@@ -436,7 +444,6 @@ body {
 .social-links:focus {
   fill: var(--white-bg-color);
   background-color: var(--accent-color-blue);
-  border-radius: 50%;
 }
 
 /* ============================Стили секции Постоянные клиенты====================== */
@@ -508,7 +515,7 @@ body {
   fill: #afb1b8;
 }
 
-/* Hover для иконок */
+/* Hover для иконок клиентов */
 .icon-client:hover {
   fill: var(--accent-color-blue);
 }
